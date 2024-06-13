@@ -23,6 +23,13 @@ http://localhost:5050/
 # mongo-express
 http://localhost:8081/
 
-# Add fake data
+# Add fake data for product service
 curl -d "count=10" -X POST http://localhost:8050/api/fake/category
 curl -d "count=10" -X POST http://localhost:8050/api/fake/product
+
+# GIT
+git status
+git branch
+git add .
+git commit -m "COMMENT TEXT"
+git push origin develop
