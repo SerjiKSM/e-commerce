@@ -1,0 +1,15 @@
+package com.ksm.payment.producer;
+
+import com.ksm.payment.enumeration.PaymentMethod;
+
+import java.math.BigDecimal;
+
+public record PaymentNotificationRequest(
+        String orderReference,
+        BigDecimal amount,
+        PaymentMethod paymentMethod,
+        String customerFirstname,
+        String customerLastname,
+        String customerEmail
+) {
+}
