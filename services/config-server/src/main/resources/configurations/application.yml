@@ -11,6 +11,7 @@ spring:
     config:
       override-system-properties: false
 
+# for zipkin
 management:
   tracing:
     sampling:
