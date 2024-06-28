@@ -1,5 +1,14 @@
 spring:
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          issuer-uri: "http://localhost:9098/realms/micro-services"
+  main:
+    web-application-type: reactive
+
   config:
     import: optional:configserver:http://localhost:8888
+
   application:
     name: gateway-service
